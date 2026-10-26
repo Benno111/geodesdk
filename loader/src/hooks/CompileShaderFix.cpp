@@ -38,7 +38,7 @@ $on_mod(Loaded) {
         0x14, 0xe0 // b +2c (skip if statement)
     });
 #elif defined(GEODE_IS_ARM_MAC)
-    #if GEODE_COMP_GD_VERSION != 22081
+    #if GEODE_COMP_GD_VERSION != 22091
         #error "Unsupported GD version!"
     #endif
 
@@ -48,7 +48,7 @@ $on_mod(Loaded) {
         0x1f, 0x20, 0x03, 0xd5 // nop (skip if statement)
     });
 #elif defined(GEODE_IS_INTEL_MAC)
-    #if GEODE_COMP_GD_VERSION != 22081
+    #if GEODE_COMP_GD_VERSION != 22091
         #error "Unsupported GD version!"
     #endif
 
@@ -58,7 +58,7 @@ $on_mod(Loaded) {
         0x48, 0x90, // nop (skip if statement)
     });
 #elif defined(GEODE_IS_IOS)
-    #if GEODE_COMP_GD_VERSION != 22081
+    #if GEODE_COMP_GD_VERSION != 22091
         #error "Unsupported GD version!"
     #endif
 

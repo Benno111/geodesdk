@@ -36,7 +36,7 @@ __attribute__((constructor)) void _entry() {
     int exitCode = geodeEntry(nullptr);
     if (exitCode != 0) return;
 
-#if defined(GEODE_IS_IOS) && GEODE_COMP_GD_VERSION != 22081
+#if defined(GEODE_IS_IOS) && GEODE_COMP_GD_VERSION != 22091
     #error "Unsupported version for iOS clipping node fix, please update the addresses"
 #endif
 
