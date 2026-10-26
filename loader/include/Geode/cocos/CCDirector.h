@@ -399,7 +399,11 @@ public:
     // @note RobTop Addition
     void showFPSLabel();
     // @note RobTop Addition
-    void toggleShowFPS(bool, gd::string, cocos2d::CCPoint);
+    void toggleShowFPS(bool, std::string, cocos2d::CCPoint);
+    // @note RobTop Addition
+    double getLastInputTime();
+    // @note RobTop Addition
+    void noteInput();
 protected:
     // @note RobTop Addition
     void createStatsLabel();

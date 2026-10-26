@@ -30,12 +30,12 @@ public:
 	cocos2d::CCObject* decodeObjectForKey(const char*, bool, int);
 
 	bool loadRootSubDictFromFile(const char*);
-	bool loadRootSubDictFromCompressedFile(const char*);
-	bool loadRootSubDictFromString(gd::string const&);
+	bool loadRootSubDictFromCompressedFile(const char*, bool);
+	bool loadRootSubDictFromString(std::string const&);
 
 	bool saveRootSubDictToFile(const char*);
-	bool saveRootSubDictToCompressedFile(const char*);
-	gd::string saveRootSubDictToString();
+	bool saveRootSubDictToCompressedFile(const char*, bool);
+	std::string saveRootSubDictToString();
 
 	bool stepIntoSubDictWithKey(const char*);
 	void stepOutOfSubDict();

@@ -547,6 +547,7 @@ public:
 
     // @note RobTop Addition
     int getParticleDrawCost();
+
 };
 
 // end of particle_nodes group

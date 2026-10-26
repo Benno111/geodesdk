@@ -187,6 +187,12 @@ public:
     // @note RobTop Addition
     void performSafeClipboardPaste();
 
+    // @note RobTop Addition
+    void clearQueuedInput();
+
+    // @note RobTop Addition
+    static int scanCodeForPositionalKey(int key);
+
 public:
     static CCEGLView* s_pEglView;
 

@@ -3,6 +3,7 @@
 
 #include "CCKeyboardDelegate.h"
 #include "../../cocoa/CCArray.h"
+#include <vector>
 
 
 NS_CC_BEGIN
@@ -51,6 +52,15 @@ public:
 	inline void setBlockRepeat(bool blockRepeat) {
 		this->m_bBlockRepeat = blockRepeat;
 	}
+
+	void flushPendingDelegates();
+	bool getLastRepeat() const;
+	bool getCaptureMode() const;
+
+	void releaseAllKeys(double);
+
+protected:
+	void dispatchToTopDelegate(enumKeyCodes key, bool down, std::vector<int> const& actions, double timestamp);
 
 public:
 	CCArray* m_pDelegates;	// 0x34
